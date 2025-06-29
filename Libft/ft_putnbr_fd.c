@@ -1,26 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   push_swap.h                                        :+:      :+:    :+:   */
+/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: manuemar <manuemar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/29 18:34:27 by manuemar          #+#    #+#             */
-/*   Updated: 2024/01/29 18:51:34 by manuemar         ###   ########.fr       */
+/*   Created: 2023/02/02 12:36:32 by manuemar          #+#    #+#             */
+/*   Updated: 2023/02/02 12:41:26 by manuemar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PUSH_SWAP_H
-# define PUSH_SWAP_H
-# include <stdlib.h>
-# include <fcntl.h>
-# include <stdio.h>
-# include <unistd.h>
+#include "libft.h"
 
-typedef struct s_stack
+void	ft_putnbr_fd(int n, int fd)
 {
-	//si
-}	t_stack;
+	char	a;
+	int		b;
 
-
-#endif
+	if (n == -2147483648)
+		write(fd, "-2147483648", 11);
+	else if (n < 10 && n >= 0)
+	{
+		a = (n % 10) + '0';
+		write(fd, &a, 1);
+	}
+	else if (n >= 0)
+	{
+		b = (n / 10);
+		ft_putnbr_fd(b, fd);
+		a = (n % 10) + '0';
+		write(fd, &a, 1);
+	}
+	else if (n < 0)
+	{
+		write(fd, "-", 1);
+		b = n * (-1);
+		ft_putnbr_fd(b, fd);
+	}
+}

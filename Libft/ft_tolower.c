@@ -1,20 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   push_swap.c                                        :+:      :+:    :+:   */
+/*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: manuemar <manuemar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/29 18:37:35 by manuemar          #+#    #+#             */
-/*   Updated: 2024/01/29 18:39:49 by manuemar         ###   ########.fr       */
+/*   Created: 2023/01/17 15:47:58 by manuemar          #+#    #+#             */
+/*   Updated: 2023/01/17 16:05:27 by manuemar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "libft.h"
 
-void	push_swap(void)
+int	ft_tolower(int c)
 {
-
+	if (c >= 65 && c <= 90)
+		c += 32;
+	return (c);
 }
-
-//comprobar no numeros duplicados y que todo sean números
