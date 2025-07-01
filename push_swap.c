@@ -6,7 +6,7 @@
 /*   By: manuemar <manuemar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/29 18:37:35 by manuemar          #+#    #+#             */
-/*   Updated: 2025/06/29 15:51:15 by manuemar         ###   ########.fr       */
+/*   Updated: 2025/07/01 20:41:39 by manuemar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,5 +56,11 @@ int	main(int argc, char **argv)
 		return (1);
 	stack_a = ft_stack_build(args);
 	stack_b = NULL;
-	size = ft_count_nodes(stack_a); // POR HACER
+	size = ft_count_nodes(stack_a);
+	if (size == 1)
+	{
+		ft_clear_stack(&stack_a);
+		ft_free_split(args);
+		return (ft_printf("Error. We need more than 1 number."), 1);
+	}
 }

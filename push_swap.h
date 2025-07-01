@@ -6,7 +6,7 @@
 /*   By: manuemar <manuemar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/29 18:34:27 by manuemar          #+#    #+#             */
-/*   Updated: 2025/06/29 15:48:16 by manuemar         ###   ########.fr       */
+/*   Updated: 2025/07/01 20:40:13 by manuemar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,8 @@ int		ft_validate_space(int argc, char **argv);
 
 //STACKS
 void	ft_add_back(t_stack **lst, t_stack *new);
+void	ft_clear_stack(t_stack **list);
+int		ft_count_nodes(t_stack *list);
 t_stack *ft_last_node(t_stack *lst);
 t_stack	*ft_new_node(int value);
 t_stack	*ft_stack_build(char **args);

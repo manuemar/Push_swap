@@ -1,18 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_stack_build.c                                   :+:      :+:    :+:   */
+/*   stack_operations.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: manuemar <manuemar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/28 18:34:08 by manuemar          #+#    #+#             */
-/*   Updated: 2025/06/29 15:48:49 by manuemar         ###   ########.fr       */
+/*   Updated: 2025/07/01 20:42:41 by manuemar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../push_swap.h"
 
-//Crear stacks
+//Limpiar nodo a nodo el stack A
+void	ft_clear_stack(t_stack **list)
+{
+	t_stack	*aux;
+
+	while (*list)
+	{
+		aux = (*list)->next;
+		free(*list);
+		*list = aux;
+	}
+}
+
+//Crear stacks anadiendo los nodos a el
 t_stack	*ft_stack_build(char **args)
 {
 	t_stack	*stack;
@@ -25,8 +38,8 @@ t_stack	*ft_stack_build(char **args)
 	while (args[i])
 	{
 		value = ft_atoi(args[i]);
-		node = ft_new_node(value); //Hacer
-		ft_add_back(&stack, node); //hacer
+		node = ft_new_node(value);
+		ft_add_back(&stack, node);
 		i++;
 	}
 	return (stack);
