@@ -6,7 +6,7 @@
 /*   By: manuemar <manuemar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/29 18:34:27 by manuemar          #+#    #+#             */
-/*   Updated: 2025/07/02 12:36:14 by manuemar         ###   ########.fr       */
+/*   Updated: 2025/07/02 19:41:27 by manuemar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,8 +28,8 @@ typedef struct s_stack
 }	t_stack;
 
 //MAIN FUNCTIONS
-int	main(int argc, char **argv);
-int	ft_validate_errors(int argc, char **argv, char **args);
+int		main(int argc, char **argv);
+int		ft_validate_errors(int argc, char **argv, char **args);
 
 //PARSING
 char	**ft_get_clean_args(int argc, char **argv);
@@ -44,7 +44,7 @@ int		ft_validate_space(int argc, char **argv);
 void	ft_add_back(t_stack **lst, t_stack *new);
 void	ft_clear_stack(t_stack **list);
 int		ft_count_nodes(t_stack *list);
-t_stack *ft_last_node(t_stack *lst);
+t_stack	*ft_last_node(t_stack *lst);
 t_stack	*ft_new_node(int value);
 t_stack	*ft_stack_build(char **args);
 
