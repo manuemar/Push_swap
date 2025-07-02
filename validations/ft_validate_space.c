@@ -6,13 +6,13 @@
 /*   By: manuemar <manuemar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/26 11:56:19 by manuemar          #+#    #+#             */
-/*   Updated: 2025/06/28 10:20:00 by manuemar         ###   ########.fr       */
+/*   Updated: 2025/07/02 12:49:48 by manuemar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../push_swap.h"
 
-//Comprobar que no sean todo espacios. Si todo son espacios return 1
+//Checks that not every character are spaces.
 int	ft_validate_space(int argc, char **argv)
 {
 	int	i;

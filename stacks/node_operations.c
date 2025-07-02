@@ -6,13 +6,13 @@
 /*   By: manuemar <manuemar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/29 15:21:45 by manuemar          #+#    #+#             */
-/*   Updated: 2025/07/01 20:36:24 by manuemar         ###   ########.fr       */
+/*   Updated: 2025/07/02 12:42:10 by manuemar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../push_swap.h"
 
-//Contar cuantos nodos hay en el stack A
+//Counts how many nodes there are in the stack
 int	ft_count_nodes(t_stack *list)
 {
 	t_stack	*aux;
@@ -28,7 +28,7 @@ int	ft_count_nodes(t_stack *list)
 	return (count);
 }
 
-//Recorrer todos los nodos hasta el ultimo
+//Go through all nodes until the last one
 t_stack *ft_last_node(t_stack *list)
 {
 	t_stack	*new;
@@ -39,7 +39,7 @@ t_stack *ft_last_node(t_stack *list)
 	return (new);
 }
 
-//Añadir un nuevo nodo al final del stack
+//Adds a new node at the end of the stack
 void	ft_add_back(t_stack **list, t_stack *new)
 {
 	if (new)
@@ -53,7 +53,7 @@ void	ft_add_back(t_stack **list, t_stack *new)
 	}
 }
 
-//Instanciar con un valor cada nodo
+//Instantiates with a default value a node
 t_stack	*ft_new_node(int value)
 {
 	t_stack	*newnode;

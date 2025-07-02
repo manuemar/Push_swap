@@ -6,13 +6,13 @@
 /*   By: manuemar <manuemar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/29 18:37:35 by manuemar          #+#    #+#             */
-/*   Updated: 2025/07/01 20:41:39 by manuemar         ###   ########.fr       */
+/*   Updated: 2025/07/02 12:43:01 by manuemar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-//comprobar no numeros duplicados y que todo sean números válidos
+//checks no numbers are duplicated and all of the args are valid numbers
 int	ft_validate_errors(int argc, char **argv, char **args)
 {
 	int	i;
@@ -63,4 +63,8 @@ int	main(int argc, char **argv)
 		ft_free_split(args);
 		return (ft_printf("Error. We need more than 1 number."), 1);
 	}
+
+	//FALTA FUNCION SORTEO Y LIMPIAR STACK A
+	ft_free_split(args);
+	return (0);
 }

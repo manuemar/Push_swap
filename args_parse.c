@@ -6,14 +6,14 @@
 /*   By: manuemar <manuemar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/25 16:59:03 by manuemar          #+#    #+#             */
-/*   Updated: 2025/06/28 10:22:14 by manuemar         ###   ########.fr       */
+/*   Updated: 2025/07/02 12:49:08 by manuemar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-//separamos los argumentos por espacios y los juntamos, liberandolo si sale
-//mal uno a uno
+//split the argument by spaces and put the result together in one variable,
+//freeing them one by one if something goes wrong.
 char	**ft_split_single_arg(char *argv)
 {
 	char	**args;
@@ -28,8 +28,8 @@ char	**ft_split_single_arg(char *argv)
 	return (args);
 }
 
-//Convertimos todos los argumentos en uno solo y repetimos el split
-//pero liberando la memoria del puntero con todos lo argumentos
+//We transform all the different arguments in one and we split them again
+//but freeing the memory of the pointer which cntains all the arguments.
 char	**ft_split_several_args(int argc, char **argv)
 {
 	char	**args;
@@ -54,6 +54,7 @@ char	**ft_split_several_args(int argc, char **argv)
 	return (free(joined), args);
 }
 
+//We take the arguments and transform them in one splited-by-spaces pointer
 char	**ft_get_clean_args(int argc, char **argv)
 {
 	if (argc == 2)

@@ -6,12 +6,13 @@
 /*   By: manuemar <manuemar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/28 17:54:23 by manuemar          #+#    #+#             */
-/*   Updated: 2025/06/28 18:00:12 by manuemar         ###   ########.fr       */
+/*   Updated: 2025/07/02 12:50:56 by manuemar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../push_swap.h"
 
+//Checks there are not two equal numbers in a list of arrays
 int	ft_has_duplicates(char **args)
 {
 	int	i;

@@ -6,8 +6,9 @@
 /*   By: manuemar <manuemar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/29 18:33:40 by manuemar          #+#    #+#             */
-/*   Updated: 2025/06/28 17:49:58 by manuemar         ###   ########.fr       */
+/*   Updated: 2025/07/02 12:38:10 by manuemar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "../push_swap.h"
+

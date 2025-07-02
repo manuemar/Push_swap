@@ -6,13 +6,13 @@
 /*   By: manuemar <manuemar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/28 18:34:08 by manuemar          #+#    #+#             */
-/*   Updated: 2025/07/01 20:42:41 by manuemar         ###   ########.fr       */
+/*   Updated: 2025/07/02 12:39:40 by manuemar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../push_swap.h"
 
-//Limpiar nodo a nodo el stack A
+//Cleans node by node stack A
 void	ft_clear_stack(t_stack **list)
 {
 	t_stack	*aux;
@@ -25,7 +25,7 @@ void	ft_clear_stack(t_stack **list)
 	}
 }
 
-//Crear stacks anadiendo los nodos a el
+//Create stacks by adding the nodes to it
 t_stack	*ft_stack_build(char **args)
 {
 	t_stack	*stack;

@@ -6,7 +6,7 @@
 /*   By: manuemar <manuemar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/29 18:34:27 by manuemar          #+#    #+#             */
-/*   Updated: 2025/07/01 20:40:13 by manuemar         ###   ########.fr       */
+/*   Updated: 2025/07/02 12:36:14 by manuemar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,5 +47,15 @@ int		ft_count_nodes(t_stack *list);
 t_stack *ft_last_node(t_stack *lst);
 t_stack	*ft_new_node(int value);
 t_stack	*ft_stack_build(char **args);
+
+//MOVEMENTS
+void	pa(t_stack **a, t_stack **b);
+void	pb(t_stack **a, t_stack **b);
+void	ra(t_stack **a);
+void	rb(t_stack **b);
+void	rr(t_stack **a, t_stack **b);
+void	rra(t_stack **a);
+void	rrb(t_stack **b);
+void	rrr(t_stack **a, t_stack **b);
 
 #endif
