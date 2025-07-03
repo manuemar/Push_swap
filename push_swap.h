@@ -6,7 +6,7 @@
 /*   By: manuemar <manuemar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/29 18:34:27 by manuemar          #+#    #+#             */
-/*   Updated: 2025/07/02 19:41:27 by manuemar         ###   ########.fr       */
+/*   Updated: 2025/07/02 20:49:14 by manuemar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,7 @@ int		ft_validate_space(int argc, char **argv);
 
 //STACKS
 void	ft_add_back(t_stack **lst, t_stack *new);
+void	ft_assign_id(t_stack *node);
 void	ft_clear_stack(t_stack **list);
 int		ft_count_nodes(t_stack *list);
 t_stack	*ft_last_node(t_stack *lst);
@@ -57,5 +58,11 @@ void	rr(t_stack **a, t_stack **b);
 void	rra(t_stack **a);
 void	rrb(t_stack **b);
 void	rrr(t_stack **a, t_stack **b);
+void	sa(t_stack **a);
+void	sb(t_stack **b);
+void	ss(t_stack **a, t_stack **b);
+
+//SORTING
+void	ft_sorting_cases(t_stack **a, t_stack **b, int size);
 
 #endif

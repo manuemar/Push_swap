@@ -6,7 +6,7 @@
 /*   By: manuemar <manuemar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/29 18:37:35 by manuemar          #+#    #+#             */
-/*   Updated: 2025/07/02 12:43:01 by manuemar         ###   ########.fr       */
+/*   Updated: 2025/07/02 20:31:28 by manuemar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,8 +63,8 @@ int	main(int argc, char **argv)
 		ft_free_split(args);
 		return (ft_printf("Error. We need more than 1 number."), 1);
 	}
-
-	//FALTA FUNCION SORTEO Y LIMPIAR STACK A
+	ft_sorting_cases(&stack_a, &stack_b, size);
+	ft_clear_stack(&stack_a);
 	ft_free_split(args);
 	return (0);
 }
