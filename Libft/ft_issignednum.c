@@ -6,18 +6,19 @@
 /*   By: manuemar <manuemar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/27 21:45:24 by manuemar          #+#    #+#             */
-/*   Updated: 2025/06/28 17:49:20 by manuemar         ###   ########.fr       */
+/*   Updated: 2025/07/09 09:05:08 by manuemar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_issignednum(char *str)
+int ft_issignednum(char *str)
 {
-	int	i;
+	int i;
 
 	if (!str || !str[0])
 		return (0);
+	i = 0;
 	while (str[i] && (str[i] == '+' || str[i] == '-'))
 	{
 		i++;

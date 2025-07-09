@@ -1,9 +1,9 @@
-NAME = push_swap.a
+NAME = push_swap
 
 CC = cc
 INCLUDE = -I push_swap.h -I Libft
-CFLAGS = -Wall -Wextra -Werror
-CFLAGS += -fsanitize=address
+CFLAGS = -Wall -Wextra -Werror -g3
+# CFLAGS += -fsanitize=address
 
 MY_SOURCES = push_swap.c \
 			 args_parse.c \
