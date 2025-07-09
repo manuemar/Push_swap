@@ -56,8 +56,8 @@ PRINTF = ./Printf/ft_printf.c \
 		 ./Printf/ft_print_deci.c \
 		 ./Printf/ft_print_hexa.c
 
-GNL = ./GetNextLine/get_next_line.c \
-	  ./GetNextLine/get_next_line_utils.c
+GNL = ./GetNextLine/get_next_line.c
+#	  ./GetNextLine/get_next_line_utils.c
 
 MY_OBJECTS = $(MY_SOURCES:.c=.o) $(BONUS:.c=.o) $(PRINTF:.c=.o) $(GNL:.c=.o)
 #BONUS_OBJS	= ${BONUS:.c=.o}

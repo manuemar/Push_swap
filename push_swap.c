@@ -6,7 +6,7 @@
 /*   By: manuemar <manuemar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/29 18:37:35 by manuemar          #+#    #+#             */
-/*   Updated: 2025/07/02 20:31:28 by manuemar         ###   ########.fr       */
+/*   Updated: 2025/07/08 23:47:18 by manuemar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ int	ft_validate_errors(int argc, char **argv, char **args)
 	}
 	while (args[i])
 	{
-		if (!ft_issignednum(args[i]) || ft_isintrange(args[i]))
+		if (!ft_issignednum(args[i]) || !ft_isintrange(args[i]))
 		{
 			ft_free_split(args);
 			return (ft_printf("Error: Number too big or not recognized.\n"), 1);

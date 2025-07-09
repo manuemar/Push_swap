@@ -6,7 +6,7 @@
 /*   By: manuemar <manuemar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/29 15:21:45 by manuemar          #+#    #+#             */
-/*   Updated: 2025/07/02 19:42:12 by manuemar         ###   ########.fr       */
+/*   Updated: 2025/07/08 21:26:25 by manuemar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ int	ft_count_nodes(t_stack *list)
 	return (count);
 }
 
-//Go through all nodes until the last one
+//Goes through all nodes until the last one
 t_stack	*ft_last_node(t_stack *list)
 {
 	t_stack	*new;

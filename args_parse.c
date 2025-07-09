@@ -6,7 +6,7 @@
 /*   By: manuemar <manuemar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/25 16:59:03 by manuemar          #+#    #+#             */
-/*   Updated: 2025/07/02 12:49:08 by manuemar         ###   ########.fr       */
+/*   Updated: 2025/07/08 23:37:04 by manuemar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ char	**ft_split_several_args(int argc, char **argv)
 		joined = ft_strjoin_free(joined, argv[i]);
 		i++;
 	}
-	args = ft_split(argv, ' ');
+	args = ft_split(joined, ' ');
 	if (!args || !args[0])
 	{
 		if (args)
@@ -60,6 +60,6 @@ char	**ft_get_clean_args(int argc, char **argv)
 	if (argc == 2)
 		return (ft_split_single_arg(argv[1]));
 	else if (argc > 2)
-		return (ft_split_several_args(argc - 1, argv));
+		return (ft_split_several_args(argc, argv));
 	return (NULL);
 }
