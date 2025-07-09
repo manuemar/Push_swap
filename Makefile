@@ -3,7 +3,7 @@ NAME = push_swap
 CC = cc
 INCLUDE = -I push_swap.h -I Libft
 CFLAGS = -Wall -Wextra -Werror -g3
-# CFLAGS += -fsanitize=address
+#CFLAGS += -fsanitize=address
 
 MY_SOURCES = push_swap.c \
 			 args_parse.c \
@@ -26,16 +26,16 @@ LIBFT = Libft/libft.a
 all: $(NAME)
 
 $(NAME): $(MY_OBJECTS)
-	@$(MAKE) -C Libft > /dev/null
-	@$(CC) $(INCLUDE) $(MY_OBJECTS) $(LIBFT) -o $(NAME)
+	$(MAKE) -C Libft > /dev/null
+	$(CC) $(CFLAGS) $(INCLUDE) $(MY_OBJECTS) $(LIBFT) -o $(NAME)
 
 clean:
-	@rm -f $(MY_OBJECTS)
-	@$(MAKE) clean -C Libft > /dev/null
+	rm -f $(MY_OBJECTS)
+	$(MAKE) clean -C Libft > /dev/null
 
 fclean: clean
-	@rm -f $(NAME)
-	@$(MAKE) fclean -C Libft > /dev/null
+	rm -f $(NAME)
+	$(MAKE) fclean -C Libft > /dev/null
 
 re: fclean all
 

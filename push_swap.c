@@ -6,7 +6,7 @@
 /*   By: manuemar <manuemar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/29 18:37:35 by manuemar          #+#    #+#             */
-/*   Updated: 2025/07/09 09:05:23 by manuemar         ###   ########.fr       */
+/*   Updated: 2025/07/09 09:14:18 by manuemar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,8 +55,6 @@ int	main(int argc, char **argv)
 	if (ft_validate_errors(argc, argv, args) == 1)
 		return (1);
 	stack_a = ft_stack_build(args);
-	if (!stack_a)
-		printf("a null\n"); //TODO
 	stack_b = NULL;
 	size = ft_count_nodes(stack_a);
 	if (size == 1)

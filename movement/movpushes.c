@@ -6,7 +6,7 @@
 /*   By: manuemar <manuemar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/29 18:48:43 by manuemar          #+#    #+#             */
-/*   Updated: 2025/07/09 08:58:54 by manuemar         ###   ########.fr       */
+/*   Updated: 2025/07/09 09:13:09 by manuemar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,6 @@ void	pa(t_stack **a, t_stack **b)
 void	pb(t_stack **a, t_stack **b)
 {
 	t_stack	*aux;
-	// t_stack *new_a;
 
 	if (!*a)
 		return ;

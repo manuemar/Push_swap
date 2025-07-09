@@ -6,7 +6,7 @@
 /*   By: manuemar <manuemar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/29 18:34:27 by manuemar          #+#    #+#             */
-/*   Updated: 2025/07/08 22:37:44 by manuemar         ###   ########.fr       */
+/*   Updated: 2025/07/09 09:07:31 by manuemar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,5 +71,7 @@ void	ft_sort_four(t_stack **a, t_stack **b);
 void	ft_sort_three(t_stack **stack);
 void	ft_sort_two(t_stack **stack);
 void	ft_sorting_cases(t_stack **a, t_stack **b, int size);
+void	ft_sort_radix(int size, t_stack **a, t_stack **b);
+int		ft_find_max_bits(t_stack **stack);
 
 #endif

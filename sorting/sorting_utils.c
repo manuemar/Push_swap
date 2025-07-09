@@ -6,7 +6,7 @@
 /*   By: manuemar <manuemar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/02 20:32:04 by manuemar          #+#    #+#             */
-/*   Updated: 2025/07/09 04:04:36 by manuemar         ###   ########.fr       */
+/*   Updated: 2025/07/09 09:07:06 by manuemar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -92,6 +92,6 @@ void	ft_sorting_cases(t_stack **a, t_stack **b, int size)
 		else if (size == 5)
 			ft_sort_five(a, b);
 		else
-			;
+			ft_sort_radix(size, a, b);
 	}
 }

@@ -62,7 +62,7 @@ GNL = ./GetNextLine/get_next_line.c
 MY_OBJECTS = $(MY_SOURCES:.c=.o) $(BONUS:.c=.o) $(PRINTF:.c=.o) $(GNL:.c=.o)
 #BONUS_OBJS	= ${BONUS:.c=.o}
 
-CC = gcc
+CC = cc
 
 CFLAGS = -Wall -Wextra -Werror
 
